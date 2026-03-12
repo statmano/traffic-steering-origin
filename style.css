@@ -14,7 +14,7 @@ body {
     text-align: center;
 }
 
-/* Centered for mobile */
+/* Logic-based classes injected by Fastly */
 .img-mobile {
     display: block;
     margin: 20px auto;
@@ -22,10 +22,22 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Left-oriented for desktop */
 .img-desktop {
     display: block;
     margin: 20px 0;
     border-radius: 4px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Cleaned up navigation styling */
+.nav-links {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 10px;
 }
