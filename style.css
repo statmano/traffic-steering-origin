@@ -1,43 +1,31 @@
 body {
-    font-family: -apple-system, system-ui, sans-serif;
+    font-family: system-ui, sans-serif;
     margin: 0;
     display: flex;
     justify-content: center;
-    min-height: 100vh;
-    background-color: #f0f2f5;
+    background-color: #f4f4f4;
 }
-
 .container {
     background: white;
     padding: 2rem;
-    width: 100%;
     text-align: center;
+    width: 100%;
 }
-
-/* Logic-based classes injected by Fastly */
 .img-mobile {
     display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    margin: 0 auto; /* Centered */
 }
-
 .img-desktop {
     display: block;
-    margin: 20px 0;
-    border-radius: 4px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-left: 0; /* Left oriented */
 }
-
-/* Cleaned up navigation styling */
 .nav-links {
-    margin-top: 30px;
-    border-top: 1px solid #eee;
-    padding-top: 10px;
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
 }
-
 .nav-links a {
-    text-decoration: none;
-    color: #007bff;
     margin: 0 10px;
+    color: blue;
+    text-decoration: none;
 }
