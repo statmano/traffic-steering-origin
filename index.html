@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edge Powered App</title>
+    <title>Fastly Compute Production</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Dynamic Content Loader</h1>
-        <p>This image was modified at the network edge based on your device and URL path.</p>
+        <h1>Fastly Edge Image Rewriter</h1>
+        <p>This content is dynamically modified based on your device and the URL path.</p>
         
-        <img id="dynamic-image" src="" alt="Loading...">
+        <img id="dynamic-image" src="" alt="Loading dynamic content...">
+
+        <div style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 10px;">
+            <p>Try these paths:</p>
+            <a href="coat">/coat</a> | <a href="boots">/boots</a>
+        </div>
     </div>
 </body>
 </html>
