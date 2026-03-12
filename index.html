@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fastly Compute Production</title>
+    <title>Fastly Edge Visual Test</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Fastly Edge Image Rewriter</h1>
-        <p>This content is dynamically modified based on your device and the URL path.</p>
+        <h1>Visual Device Test</h1>
+        <p>If the border is <b>Red</b>, you are on Mobile. If <b>Blue</b>, you are on Desktop.</p>
         
-        <img id="dynamic-image" src="" alt="Loading dynamic content...">
+        <img id="dynamic-image" src="" alt="Dynamic content">
+        
+        <span id="dimension-label"></span>
 
         <div class="nav-links">
-            <p>Try these paths:</p>
-            <a href="/coat">/coat</a> | <a href="/boots">/boots</a>
+            <a href="/coat">Test Coat</a> | <a href="/boots">Test Boots</a>
         </div>
     </div>
 </body>

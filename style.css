@@ -3,29 +3,47 @@ body {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
 }
+
 .container {
     background: white;
     padding: 2rem;
     text-align: center;
     width: 100%;
+    max-width: 800px;
 }
+
+/* MOBILE: Centered with a thick Crimson border */
 .img-mobile {
     display: block;
-    margin: 0 auto; /* Centered */
+    margin: 20px auto;
+    border: 10px solid crimson;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
+
+/* DESKTOP: Left-aligned with a thick Royal Blue border */
 .img-desktop {
     display: block;
-    margin-left: 0; /* Left oriented */
+    margin: 20px 0;
+    border: 10px solid royalblue;
 }
+
+#dimension-label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    display: block;
+}
+
 .nav-links {
-    margin-top: 2rem;
-    border-top: 1px solid #ddd;
-    padding-top: 1rem;
+    margin-top: 30px;
+    border-top: 2px solid #eee;
+    padding-top: 15px;
 }
+
 .nav-links a {
-    margin: 0 10px;
-    color: blue;
-    text-decoration: none;
+    margin: 0 15px;
+    color: #333;
+    text-decoration: underline;
 }
