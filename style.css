@@ -1,42 +1,40 @@
 body {
-    font-family: system-ui, sans-serif;
+    font-family: system-ui, -apple-system, sans-serif;
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #f0f0f0;
+    background-color: #f8f9fa;
 }
+
 .container {
     background: white;
     padding: 2rem;
     text-align: center;
     width: 100%;
-    max-width: 800px;
-    min-height: 400px;
+    max-width: 600px;
+    margin-top: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Specificity check: using !important to override any browser defaults */
-.img-mobile {
-    display: block !important;
-    margin: 20px auto !important; /* Centered */
-    border: 10px solid crimson !important;
+#dynamic-image {
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #eee; /* Light neutral border */
 }
 
-.img-desktop {
-    display: block !important;
-    margin: 20px 0 !important; /* Left aligned */
-    border: 10px solid royalblue !important;
+/* Specific borders for device visual check */
+@media (max-width: 768px) {
+    #dynamic-image { border-color: crimson; }
+}
+@media (min-width: 769px) {
+    #dynamic-image { border-color: royalblue; }
 }
 
 #dimension-label {
-    font-weight: bold;
     display: block;
-    margin-top: 15px;
-    font-size: 1.2rem;
-    color: #333;
-}
-
-.nav-links {
-    margin-top: 30px;
-    border-top: 2px solid #eee;
-    padding-top: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    background: #f1f1f1;
+    border-radius: 4px;
 }
