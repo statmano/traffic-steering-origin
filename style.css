@@ -5,45 +5,38 @@ body {
     justify-content: center;
     background-color: #f0f0f0;
 }
-
 .container {
     background: white;
     padding: 2rem;
     text-align: center;
     width: 100%;
     max-width: 800px;
+    min-height: 400px;
 }
 
-/* MOBILE: Centered with a thick Crimson border */
+/* Specificity check: using !important to override any browser defaults */
 .img-mobile {
-    display: block;
-    margin: 20px auto;
-    border: 10px solid crimson;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    display: block !important;
+    margin: 20px auto !important; /* Centered */
+    border: 10px solid crimson !important;
 }
 
-/* DESKTOP: Left-aligned with a thick Royal Blue border */
 .img-desktop {
-    display: block;
-    margin: 20px 0;
-    border: 10px solid royalblue;
+    display: block !important;
+    margin: 20px 0 !important; /* Left aligned */
+    border: 10px solid royalblue !important;
 }
 
 #dimension-label {
     font-weight: bold;
-    font-size: 1.2rem;
-    margin-top: 10px;
     display: block;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #333;
 }
 
 .nav-links {
     margin-top: 30px;
     border-top: 2px solid #eee;
     padding-top: 15px;
-}
-
-.nav-links a {
-    margin: 0 15px;
-    color: #333;
-    text-decoration: underline;
 }
